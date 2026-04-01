@@ -130,9 +130,12 @@ Rendering runs at the browser's native refresh rate (~60 fps) via `requestAnimat
 
 ```
 game-of-life/
-├── index.html      # Page shell — canvas element + demo content layout
-├── style.css       # Fixed canvas behind content; hero backdrop; hint bar
-└── gol.js          # Everything: grid logic, renderer, interactions, age system
+├── index.html               # Page shell — canvas element + demo content layout
+├── style.css                # Fixed canvas behind content; hero backdrop; hint bar
+├── gol.js                   # Everything: grid logic, renderer, interactions, age system
+└── python_game/
+    ├── main.py              # Pygame desktop app — full simulation with HUD & controls
+    └── test_game_of_life.py # 31 unit tests covering all rules and known patterns
 ```
 
 `gol.js` is structured in clear sections:
