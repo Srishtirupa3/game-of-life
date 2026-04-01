@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="gol-canvas"></canvas>
+
+  <main class="content">
+    <div class="hero">
+      <p class="eyebrow">Zero-player game · 1970</p>
+      <h1>Conway's Game<br>of Life</h1>
+      <p class="subtitle">
+        An infinite universe governed by four rules.<br>
+        Every pattern you see emerged from nothing but a starting state.
+      </p>
+    </div>
+
+    <div class="rules">
+      <div class="rule">
+        <span class="rule-num">01</span>
+        <div>
+          <strong>Underpopulation</strong>
+          <p>Fewer than 2 live neighbours → dies</p>
+        </div>
+      </div>
+      <div class="rule">
+        <span class="rule-num">02</span>
+        <div>
+          <strong>Survival</strong>
+          <p>2 or 3 live neighbours → lives on</p>
+        </div>
+      </div>
+      <div class="rule">
+        <span class="rule-num">03</span>
+        <div>
+          <strong>Overpopulation</strong>
+          <p>More than 3 live neighbours → dies</p>
+        </div>
+      </div>
+      <div class="rule">
+        <span class="rule-num">04</span>
+        <div>
+          <strong>Reproduction</strong>
+          <p>Dead cell with exactly 3 neighbours → born</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="hints">
+    <span>Move to seed</span>
+    <span class="dot">·</span>
+    <span>Left drag to draw</span>
+    <span class="dot">·</span>
+    <span>Right drag to erase</span>
+    <span class="dot">·</span>
+    <span>Click to burst</span>
+  </footer>
+
+  <script src="gol.js"></script>
+</body>
+</html>
